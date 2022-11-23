@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+
+    <xs:simpleType name="quan">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="1"/>
+            <xs:maxInclusive value="100"/> 
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="article">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="head"/>
+                <xs:element name="order" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="code"/>
+                        <xs:element name="id"/>
+                        <xs:element name="name"/>
+                        <xs:element name="quantity" type="quan"/>
+                        <xs:element name="price"/>
+                        <xs:element name="status"/>
+                    </xs:sequence>
+                </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

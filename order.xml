@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="order.xsl" type="text/xsl"?>
+
+<article xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="order.xsd">
+    <head>Order Details</head>
+
+    <order>
+        <code>PGS01</code>
+        <id>PID10</id>
+        <name>Keychain</name>
+        <quantity>10</quantity>
+        <price>200</price>
+        <status>New</status>
+    </order>
+
+    <order>
+        <code>PGS44</code>
+        <id>PID03</id>
+        <name>Rings</name>
+        <quantity>2</quantity>
+        <price>200</price>
+        <status>Delivered</status>
+    </order>
+    <order>
+        <code>PGS76</code>
+        <id>PID07</id>
+        <name>Plushies</name>
+        <quantity>2</quantity>
+        <price>2000</price>
+        <status>Shipping</status>
+    </order>
+    <order>
+        <code>PGS34</code>
+        <id>PID11</id>
+        <name>Moon Lmap</name>
+        <quantity>1</quantity>
+        <price>200</price>
+        <status>Cancelled</status>
+    </order>
+    <order>
+        <code>PGS12</code>
+        <id>PID44</id>
+        <name>Photo Frame</name>
+        <quantity>1</quantity>
+        <price>500</price>
+        <status>Delivered</status>
+    </order>
+
+    
+
+</article>
